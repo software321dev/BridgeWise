@@ -32,6 +32,7 @@ import { RouteInsightsExporterModule } from './exporters/routes/stellar/route-in
 import { SorobanLifecycleModule } from './analytics/lifecycle/transfers/stellar/soroban-lifecycle.module';
 import { SorobanTransferLifecycleEntity } from './analytics/lifecycle/transfers/stellar/entities/soroban-transfer-lifecycle.entity';
 import { QuotesModule } from './quotes/quotes.module';
+import { RelayerModule } from './relayer/relayer.module';
 
 @Module({
   imports: [
@@ -84,6 +85,7 @@ import { QuotesModule } from './quotes/quotes.module';
     StellarExplainabilityModule,
     RouteInsightsExporterModule,
     SorobanLifecycleModule,
+    RelayerModule,
   ],
   controllers: [AppController],
   providers: [

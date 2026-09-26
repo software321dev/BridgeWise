@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Param, Body, HttpCode, HttpStatus, BadRequestException } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiParam, ApiBody, ApiResponse } from '@nestjs/swagger';
 import { TransferStateMachineService } from './transfer-state-machine.service';
-import { TransferState, TransferLifecycle } from './transfer-state-machine.types';
+import type { TransferState, TransferLifecycle } from './transfer-state-machine.types';
 
 class TransitionDto {
   state: TransferState;
